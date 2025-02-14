@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::after{
+    box-sizing: border-box;
+}
+*::before{
+    box-sizing: border-box;
+}
+:root{
+    --primary:#FEDDD1;
+    --secondary:#FD4430;
+}
+body{
+    font-family: "Lato", serif;
+}
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+    min-width: 1519px;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+    /* header */
+
+header{
+    padding-top: 20px;
+    min-height: 100vh;
+    background: url(/src/images/background.png) center / cover no-repeat;
+   
+}
+    /* navbar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:var(--primary) ;
+    padding-bottom: 100px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav-menu__item a{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    transition: .3s;
+    padding: 5px;
+}
+.nav-menu__item :hover{
+    font-size: 18px;
+    color: var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+}
+.nav-tools{
+    display: flex;
+    align-items: center;
+    gap:36px;
+}
+.nav-consalting{
+    padding: 12px 36px;
+    background: linear-gradient(to left,#FF3F3A,#F75E05);
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    transition: .3s;
+}
+.nav-consalting :hover{
+    background: linear-gradient(to right,#FF3F3A,#F75E05);
+}
+.nav-login{
+    color: #424551;
+    font-size: 16px;
+    font-weight: 700;line-height: 26px;
+}
+.nav-login i{
+    padding-right: 8px;
+}
+
+    /* hero */
+.hero{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 100px 100px 100px 100px;
+}
+.hero-info span{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+h1{
+    max-width: 496px;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 83.2px;
+    padding-top: 24px;
+    padding-bottom: 60px;
+}
+.hero-btn{
+    display: flex;
+    gap: 24px;
+}
+.aboutus{
+    padding: 12px 36px;
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    color: var(--secondary);
+    font-size: 16px;
+    font-weight: 700;       
+}
+.courses{
+    padding: 12px 36px;
+    background: linear-gradient(to left,#FF3F3A,#F75E05);
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.hero-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.hero-footer__item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hero-footer__item h2{
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 60px;
+    color: #1E212C;
+}
+.hero-footer__item p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1E212C;
+}
+.hero-footer__item span{
+    width: 5px;
+    height: 5px;
+    background-color: var(--secondary);
+    border-radius:50%;
+    margin-left: 50px;
+}
+
+/* Responsive */
+@media screen and (min-width:375px) {
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+        min-width: 568px;
+    }
+    header{
+        width: 620px;
+        background-image: none;
+        background-color: var(--primary);
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-consalting{
+        padding: 8px 16px;
+    }
+    .hero-info span{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px; 
+    }
+    .hero-info h1{
+    max-width: 300px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 48px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    }
+    .aboutus{
+        padding: 12px 36px;
+        background-color: transparent;
+        border: 1px solid var(--secondary);
+        border-radius: 4px;
+        color: var(--secondary);
+        font-size: 16px;
+        font-weight: 700;       
+    }
+    .courses{
+        padding: 12px 36px;
+        background: linear-gradient(to left,#FF3F3A,#F75E05);
+        border: 1px solid var(--secondary);
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+    }   
+}
